@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'folio-frontend';
+  title = 'BucketList';
+  pageTitle = 'Personel Manager';
 }
