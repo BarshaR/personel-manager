@@ -6,7 +6,9 @@ import { TreeViewComponent } from './tree-panel/tree-view/tree-view.component';
 import { TreeNodeDetailComponent } from './tree-panel/tree-node-detail/tree-node-detail.component';
 import { PanelModule } from 'primeng/panel';
 import { MenubarModule } from 'primeng/menubar';
-import {TreeModule} from 'primeng/tree';
+import { TreeModule } from 'primeng/tree';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [TreePanelComponent, ToolbarComponent, TreeViewComponent, TreeNodeDetailComponent],
@@ -15,6 +17,8 @@ import {TreeModule} from 'primeng/tree';
     PanelModule,
     MenubarModule,
     TreeModule,
+    ScrollPanelModule,
+    ButtonModule
   ],
   exports: [
     TreePanelComponent
