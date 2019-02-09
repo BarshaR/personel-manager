@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "folio-frontend": {
+    "personel-manager": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/folio-frontend",
+            "outputPath": "dist/personel-manager",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "folio-frontend:build"
+            "browserTarget": "personel-manager:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "folio-frontend:build:production"
+              "browserTarget": "personel-manager:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "folio-frontend:build"
+            "browserTarget": "personel-manager:build"
           }
         },
         "test": {
@@ -110,7 +110,7 @@
         }
       }
     },
-    "folio-frontend-e2e": {
+    "personel-manager-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -119,11 +119,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "folio-frontend:serve"
+            "devServerTarget": "personel-manager:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "folio-frontend:serve:production"
+              "devServerTarget": "personel-manager:serve:production"
             }
           }
         },
@@ -139,5 +139,5 @@
       }
     }
   },
-  "defaultProject": "folio-frontend"
+  "defaultProject": "personel-manager"
 }
